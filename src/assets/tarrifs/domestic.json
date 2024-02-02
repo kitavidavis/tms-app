@@ -1,0 +1,6 @@
+[
+    {"_comment": "To use this fille, copy these contents to the JSON input and remove this comment."},
+    {"qty": "0-6", "flat-rate": "yes", "cost": "204.00"},
+    {"qty": "7-60", "cost": "53.00"},
+    {"qty": ">60", "cost": "64.00"}
+]

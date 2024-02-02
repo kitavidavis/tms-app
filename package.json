@@ -1,0 +1,85 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.3.0",
+    "@faker-js/faker": "^7.5.0",
+    "@fontsource/roboto": "^4.5.1",
+    "@hapi/iron": "6.0.0",
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
+    "@mantine/core": "^5.5.4",
+    "@mantine/dates": "^5.5.4",
+    "@mantine/ds": "^5.3.3",
+    "@mantine/form": "^5.8.2",
+    "@mantine/hooks": "^5.5.4",
+    "@mantine/next": "^5.3.3",
+    "@mantine/prism": "^5.6.3",
+    "@mantine/spotlight": "^5.3.3",
+    "@mantine/styles": "^5.3.3",
+    "@mui/material": "^5.0.6",
+    "@react-spring/web": "^9.5.5",
+    "@tabler/icons": "^1.100.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@visx/axis": "^2.14.0",
+    "@visx/event": "^2.6.0",
+    "@visx/gradient": "^2.10.0",
+    "@visx/grid": "^2.12.2",
+    "@visx/group": "^2.10.0",
+    "@visx/mock-data": "^2.1.2",
+    "@visx/scale": "^2.2.2",
+    "@visx/shape": "^2.12.2",
+    "@visx/threshold": "^2.12.2",
+    "@visx/tooltip": "^2.15.0",
+    "axios": "^0.24.0",
+    "chart.js": "^3.9.1",
+    "cookie": "0.4.0",
+    "d3-time-format": "^4.1.0",
+    "dayjs": "^1.11.6",
+    "leaflet": "^1.8.0",
+    "nanoid": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^4.3.1",
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.2.0",
+    "react-json-editor-ajrm": "^2.5.13",
+    "react-router-dom": "^6.4.1",
+    "react-scripts": "^4.0.3",
+    "react-toast-notifications": "^2.5.1",
+    "recharts": "^2.1.14",
+    "stylis-plugin-rtl": "^2.1.1",
+    "tabler-icons-react": "^1.55.0",
+    "web-vitals": "^2.1.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
