@@ -1,4 +1,4 @@
-import { ColorSwatch, Text, Avatar, Group, Paper, SimpleGrid, Anchor, Title as MantineTitle, useMantineColorScheme, useMantineTheme, ActionIcon, TextInput, NumberInput, Switch, Button, Tooltip, Table, Center, Menu, Drawer, Stack, Title} from '@mantine/core';
+import { ColorSwatch, Text, Avatar, Group, Paper, SimpleGrid, Anchor, Title as MantineTitle, useMantineColorScheme, useMantineTheme, ActionIcon, TextInput, NumberInput, Switch, Button, Tooltip, Table, Center, Menu, Drawer, Stack, Title, Badge} from '@mantine/core';
 import { useLocalStorage, useViewportSize } from '@mantine/hooks';
 import { BreadcrumbsSlash } from "../BreadCrumbs/";
 import { AuthContext } from '../../App';
@@ -102,22 +102,22 @@ function PaymentsList() {
                     #
                 </th>
                 <th>
-                    Image
+                    Transaction ID
                 </th>
                 <th>
-                    Name
+                    Account
                 </th>
                 <th>
                    Amount
                 </th>
                 <th>
-                    For
+                    MSISDN
                 </th>
                 <th>
                     Paid At
                 </th>
                 <th>
-                    Transaction Status
+                   First Name
                 </th>
             </tr>
         </thead>
@@ -138,19 +138,22 @@ function PaymentsList() {
                                 {index+1}
                             </td>
                             <td>
-                                <Avatar radius="xl" >H</Avatar>
+                                {item.transaction_id}
                             </td>
                             <td>
-                                {item.name}
+                                {item.account}
                             </td>
                             <td>
-                                {item.rooms}
+                                {item.transaction_amount}
                             </td>
                             <td>
-                                {item.rooms}
+                                {item.MSISDN}
                             </td>
                             <td>
-                                0
+                                {new Date(item.createdAt).toLocaleDateString()}
+                            </td>
+                            <td>
+                                {item.first_name}
                             </td>
                             <td>
                                 <Menu>
